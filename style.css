@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Hurricane', cursive;
+}
+
+.container{
+    margin-top: 52px;
+}
+li{
+    display:flex;
+    /* overflow: hidden;min-height: 20vh;height:20px;width:80vw; */
+    word-wrap: break-word;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #0d6efd;
+    /* color: white; */
+    border-top: 1px solid white;
+
+
+   
+
+}
+li>h5{
+    max-width: 86%;
+    word-wrap: break-word;
+}
+.btn-wrap{
+    align-items: center;
+}
+
+ul{
+    /* box-shadow: 1px 4px 19px -4px blue; */
+    box-shadow: 4px 4px 14px -4px blue ;
+    /* border-top: 1px solid white; */
+
+}
+
+
+
+
+
+
