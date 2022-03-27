@@ -1,8 +1,10 @@
 let addButton = document.getElementById('add_button')
 addButton.addEventListener('click', enterText)
 
+
 function enterText(e){
     e.preventDefault();
+    let input_text = document.querySelector('.form-control')
     let currentButton = e.currentTarget;
     let currentInput  = currentButton.previousElementSibling
     let currentNotes = currentInput.value
@@ -16,9 +18,19 @@ function enterText(e){
 
     let parentLists = document.getElementById('parentLists');
     parentLists.appendChild(newLine)
+
+    input_text.value = "";    
+    
+
+}
+function myfun(){
+  const input=document.getElementsByTagName('input');
+  console.log(input);
+
 }
 
 function remove(currentElement){
+
     currentElement.parentElement.remove()
 }
 
@@ -41,4 +53,5 @@ function edit(currentElement){
     
     currentElement.parentElement.replaceChild(currInput, currentElement.previousElementSibling)
 } 
+
 }
